@@ -12,8 +12,11 @@
     "appType": "app",
     "appDisplayName": "Murder Mystery",
     "iconFile": "resources/icon.png",
-    "wipeColor": "#ffffff",
-    "requestedPermissions": [],
+    "wipeColor": "#000000",
+    "requestedPermissions": [
+      "access_activity",
+      "run_background"
+    ],
     "buildTargets": [
       "higgs",
       "meson",
