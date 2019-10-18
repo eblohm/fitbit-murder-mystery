@@ -20,6 +20,7 @@ export function setMurderer() {
     weaponArray[Math.floor(Math.random() * weaponArray.length)];
 
   return murdererInfo;
+  console.log('hi');
 }
 
 export function checkGuess(guess: Murderer, murderer: Murderer) {

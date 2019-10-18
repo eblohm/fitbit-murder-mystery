@@ -1,3 +1,5 @@
 <svg>
-  <rect id="background" />
+  <link rel="import" href="title.gui" />
+  <link rel="import" href="home.gui" />
+  <link rel="import" href="gameover.gui" />
 </svg>
