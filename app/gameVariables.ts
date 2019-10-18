@@ -1,6 +1,10 @@
-import document from 'document';
+interface Murderer {
+  name: string;
+  room: string;
+  weapon: string;
+}
 
-const roomArray = [
+const roomArray: string[] = [
   'Kitchen',
   'Bedroom',
   'Office',
@@ -13,7 +17,7 @@ const roomArray = [
   'Backyard',
 ];
 
-const characterArray = [
+const characterArray: string[] = [
   'The Boss',
   'The Developer',
   'The Chef',
@@ -26,7 +30,7 @@ const characterArray = [
   'The Couch Potato',
 ];
 
-const weaponArray = [
+const weaponArray: string[] = [
   'Knife',
   'Rope',
   'Saw',
@@ -38,3 +42,5 @@ const weaponArray = [
   'Keyboard',
   'Steel Toe Boots',
 ];
+
+export { Murderer, roomArray, characterArray, weaponArray };
