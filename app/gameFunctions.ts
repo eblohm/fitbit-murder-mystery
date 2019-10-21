@@ -47,15 +47,21 @@ export function checkGuess(guess: Murderer, murderer: Murderer) {
     return `You caught the killer!`;
   }
 
+  let guessMessage: string = '';
+
   if (!murdererName) {
-    return `${guess.name} is not the killer...continue looking!`;
+    guessMessage += `${guess.name} is not the killer...continue looking!`;
   }
 
   if (!murdererRoom) {
-    return `${guess.room} was not where the murder happened...keep searching!`;
+    // Todo: room themed messages
+    guessMessage += `${guess.room} was not where the murder happened...keep searching!`;
   }
 
   if (!murdererWeapon) {
-    return `${guess.weapon} was not the weapon used.`;
+    // ? weapon themed messages
+    guessMessage += `${guess.weapon} was not the weapon used.`;
   }
+
+  return guessMessage;
 }
