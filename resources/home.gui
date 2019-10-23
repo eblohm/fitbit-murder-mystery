@@ -1,12 +1,20 @@
-<svg id="home-screen">
-  <use href="#game-options">
-    <use href="#game-option" class="game-option">
-      <text>Select next room</text>
+<svg id="home-screen" display="none">
+
+  <defs>
+    <symbol id="my-tile-item" href="#tile-list-item" focusable="false" pointer-events="none" system-events="all">
+      <rect id="tile-divider-bottom" class="tile-divider-bottom" />
+      <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%" height="100%-2" opacity="0" />
+    </symbol>
+  </defs>
+
+  <use href="#tile-list" id="game-options">
+    <use href="#my-tile-item" id="room-travel" class="option-item">
+      <text>Room Travel</text>
     </use>
-    <use href="#game-option" class="game-option">
-      <text>Guess Murderer</text>
+    <use href="#my-tile-item" class="option-item">
+      <text>Make A Guess</text>
     </use>
-    <use href="#game-option" class="game-option">
+    <use href="#my-tile-item" class="option-item">
       <text>View Previous Guesses</text>
     </use>
   </use>

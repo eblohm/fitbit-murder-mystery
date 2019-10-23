@@ -1,0 +1,7 @@
+#title-screen text {
+  fill: 'white';
+  font-family: Fabrikat-Black;
+  font-size: 50;
+  height: 200;
+  text-anchor: middle;
+}

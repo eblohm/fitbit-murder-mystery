@@ -10,13 +10,3 @@
   height: 100%;
   fill: white;
 }
-
-.game-option {
-  height: 80;
-}
-
-.game-option text {
-  height: 32;
-  font-family: System-Regular;
-  fill: 'white';
-}

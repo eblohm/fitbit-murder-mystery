@@ -1,3 +1,7 @@
-<svg id="title-screen">
-  <text>Murder Mystery</text>
+<svg id="title-screen" display="inline">
+  <text x="50%" y="45">Murder</text>
+  <text x="50%" y="95">Mystery</text>
+  <use id="start-button" href="#square-button" y="100%-73" fill="fb-red">
+    <set href="#text" attributeName="text-buffer" to="New Game" />
+  </use>
 </svg>
