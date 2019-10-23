@@ -1,0 +1,29 @@
+<svg id="guess-screen" display="none">
+  <defs>
+    <symbol id="game-room" href="#tile-list-item" focusable="false"
+            pointer-events="none" system-events="all" display="none">
+      <text id="text" class="room-text"/>
+      <rect id="tile-divider-bottom" class="tile-divider-bottom" />
+      <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%"
+            height="100%-2" opacity="0" />
+    </symbol>
+
+  </defs>
+  <use id="character-list" href="#tile-list">
+    <var id="virtual" value="1" />
+    <var id="separator-height-bottom" value="2" />
+
+    <use id="character-pool" href="#tile-list-pool">
+      <use id="character-pool[0]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[1]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[2]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[3]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[4]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[5]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[6]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[7]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[8]" href="#game-room" class="tile-list-item" />
+      <use id="character-pool[9]" href="#game-room" class="tile-list-item" />
+    </use>
+  </use>
+</svg>

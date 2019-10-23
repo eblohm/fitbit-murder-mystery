@@ -1,30 +1,27 @@
 import document from 'document';
-import { Murderer } from './gameVariables';
+import {
+  Murderer,
+  roomArray,
+  titleScreen,
+  mainScreen,
+  roomScreen,
+  newGame,
+  roomSelect,
+  roomTarget,
+} from './gameVariables';
 import { setMurderer } from './gameFunctions';
+import { newRoomTarget } from './gameDisplay';
 
-// Variables
-const newGame = document.getElementById('start-button');
-const titleScreen: any = document.getElementById('title-screen');
-const mainScreen: any = document.getElementById('home-screen');
-const homeList = document.getElementById('game-options');
-const homeListItems = homeList.getElementsByClassName('option-item');
+console.log(`Hello!!!! ${roomTarget}`);
 
-newGame.onclick = function(evt) {
+newGame.onclick = evt => {
   const murderer: Murderer = setMurderer();
   titleScreen.style.display = 'none';
   mainScreen.style.display = 'inline';
-  console.log('hi');
 };
 
-homeListItems.forEach((element, index) => {
-  let touch = element.getElementById('touch-me');
-  touch.onclick = evt => {
-    console.log(`touched: ${index}`);
-  };
-});
-
-const test = document.getElementById('room-travel').getElementById('touch-me');
-
-test.onclick = evt => {
-  console.log('kliked2');
+let testTarget: string = '';
+roomSelect.onclick = evt => {
+  testTarget = newRoomTarget();
+  console.log(`Target: ${testTarget}`);
 };

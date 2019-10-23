@@ -3,18 +3,18 @@
   <defs>
     <symbol id="my-tile-item" href="#tile-list-item" focusable="false" pointer-events="none" system-events="all">
       <rect id="tile-divider-bottom" class="tile-divider-bottom" />
-      <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%" height="100%-2" opacity="0" />
+      <rect id="button" pointer-events="all" x="0" y="0" width="100%" height="100%-2" opacity="0" />
     </symbol>
   </defs>
 
   <use href="#tile-list" id="game-options">
-    <use href="#my-tile-item" id="room-travel" class="option-item">
+    <use href="#my-tile-item" id="room-travel" class="tile-list-item option-item">
       <text>Room Travel</text>
     </use>
-    <use href="#my-tile-item" class="option-item">
+    <use href="#my-tile-item" id="make-guess" class="tile-list-item option-item">
       <text>Make A Guess</text>
     </use>
-    <use href="#my-tile-item" class="option-item">
+    <use href="#my-tile-item" id="prev-guess" class="tile-list-item option-item">
       <text>View Previous Guesses</text>
     </use>
   </use>

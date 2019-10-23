@@ -1,5 +1,8 @@
 <svg>
-  <link rel="import" href="title.gui" />
-  <link rel="import" href="home.gui" />
-  <link rel="import" href="gameover.gui" />
+  <link rel="import" href="overview/title.gui" />
+  <link rel="import" href="overview/home.gui" />
+  <link rel="import" href="game/roomselect.gui" />
+  <link rel="import" href="game/makeguess.gui" />
+  <link rel="import" href="game/prevguess.gui" />
+  <link rel="import" href="overview/gameover.gui" />
 </svg>
