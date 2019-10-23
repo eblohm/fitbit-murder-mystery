@@ -1,5 +1,19 @@
 <svg>
   <link rel="import" href="title.gui" />
-  <link rel="import" href="home.gui" />
+  <!-- <link rel="import" href="home.gui" /> -->
   <link rel="import" href="gameover.gui" />
+
+
+  <!-- <use href="#game-options">
+    <use href="#game-option" class="game-option">
+      <text>Select next room</text>
+    </use>
+    <use href="#game-option" class="game-option">
+      <text>Guess Murderer</text>
+    </use>
+    <use href="#game-option" class="game-option">
+      <text>View Previous Guesses</text>
+    </use>
+  </use> -->
+  <text>Hi</text>
 </svg>

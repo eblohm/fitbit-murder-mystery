@@ -1,3 +1,13 @@
-<svg id="home-screen" display="none">
-  <text>Murder has been commit!!!! EEEEEK</text>
+<svg id="home-screen">
+  <use href="#game-options">
+    <use href="#game-option" class="game-option">
+      <text>Select next room</text>
+    </use>
+    <use href="#game-option" class="game-option">
+      <text>Guess Murderer</text>
+    </use>
+    <use href="#game-option" class="game-option">
+      <text>View Previous Guesses</text>
+    </use>
+  </use>
 </svg>
