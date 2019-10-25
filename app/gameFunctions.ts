@@ -12,6 +12,7 @@ import {
   winScreen,
   wrongScreen,
 } from './gameVariables';
+import { shuffle } from './utilities';
 
 export function setMurderer() {
   let murdererInfo: Murderer = {
@@ -27,6 +28,25 @@ export function setMurderer() {
     weaponArray[Math.floor(Math.random() * weaponArray.length)];
 
   return murdererInfo;
+}
+
+export function generateHouse() {
+  const ROOM_NUMBERS: Array<Number> = shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+  const houseLayout = {
+    kitchen: ROOM_NUMBERS[0],
+    bedroom: ROOM_NUMBERS[1],
+    office: ROOM_NUMBERS[2],
+    library: ROOM_NUMBERS[3],
+    bathroom: ROOM_NUMBERS[4],
+    basement: ROOM_NUMBERS[5],
+    garage: ROOM_NUMBERS[6],
+    den: ROOM_NUMBERS[7],
+    attic: ROOM_NUMBERS[8],
+    backyard: ROOM_NUMBERS[9],
+  };
+
+  return houseLayout;
 }
 
 export function newRoomTarget(guess: Murderer) {

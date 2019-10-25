@@ -13,20 +13,35 @@ import {
   winScreen,
   returnButton,
   wrongScreen,
+  makeGuessText,
 } from './gameVariables';
 import {
   setMurderer,
   guessCharacter,
   checkGuess,
   newRoomTarget,
+  generateHouse,
 } from './gameFunctions';
 
 let murderer: Murderer = { name: '', room: '', weapon: '' };
 let guess: Murderer = { name: '', room: '', weapon: '' };
 let prevGuessses: Array<Murderer> = [];
+let house = {
+  kitchen: '',
+  bedroom: '',
+  office: '',
+  library: '',
+  bathroom: '',
+  basement: '',
+  garage: '',
+  den: '',
+  attic: '',
+  backyard: '',
+};
 
 newGame.onclick = evt => {
   murderer = setMurderer();
+  generateHouse();
   titleScreen.style.display = 'none';
   mainScreen.style.display = 'inline';
   console.log(JSON.stringify(murderer));
@@ -54,6 +69,7 @@ returnButton.onclick = evt => {
 
 roomSelect.onclick = evt => {
   guess = newRoomTarget(guess);
+  makeGuessText.style.display = 'none';
 };
 
 makeGuess.onclick = evt => {
