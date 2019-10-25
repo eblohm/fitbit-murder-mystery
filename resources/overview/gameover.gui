@@ -1,3 +1,17 @@
-<svg id="gameover-screen" display="none">
-  <text>Game Over :(</text>
+<svg id="notice-screen">
+  <svg id="win-screen" display="none">
+    <text>You win! You've successfully located the killer, their weapon, and the room where they did it.</text>
+    <use id="play-again" href="#square-button" y="100%-73" fill="fb-red">
+      <set href="#text" attributeName="text-buffer" to="Play Again" />
+    </use>
+  </svg>
+
+  <svg id="wrong-screen" display="none">
+    <text id="killer-info" />
+    <text id="room-info" />
+    <text id="weapon-info" />
+    <use id="return-button" href="#square-button" y="100%-73" fill="fb-red">
+      <set href="#text" attributeName="text-buffer" to="Back To Menu" />
+    </use>
+  </svg>
 </svg>

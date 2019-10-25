@@ -1,0 +1,12 @@
+#win-screen text {
+  height: 32;
+  font-family: System-Regular;
+  fill: 'white';
+}
+
+#wrong-screen text {
+  height: 32;
+  font-family: System-Regular;
+  fill: 'white';
+  text-length: 99;
+}

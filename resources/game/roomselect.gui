@@ -2,7 +2,7 @@
   <defs>
     <symbol id="game-room" href="#tile-list-item" focusable="false"
             pointer-events="none" system-events="all" display="none">
-      <text id="text" class="room-text"/>
+      <text id="text" class="tile-text"/>
       <rect id="tile-divider-bottom" class="tile-divider-bottom" />
       <rect id="touch-me" pointer-events="all" x="0" y="0" width="100%"
             height="100%-2" opacity="0" />

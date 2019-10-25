@@ -17,5 +17,8 @@
     <use href="#my-tile-item" id="prev-guess" class="tile-list-item option-item">
       <text>View Previous Guesses</text>
     </use>
+    <use href="#my-tile-item" id="log-stuff" class="tile-list-item option-item">
+      <text>Log Data</text>
+    </use>
   </use>
 </svg>

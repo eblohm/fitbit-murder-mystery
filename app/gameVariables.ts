@@ -49,10 +49,17 @@ const weaponArray: string[] = [
 const titleScreen: any = document.getElementById('title-screen');
 const mainScreen: any = document.getElementById('home-screen');
 const roomScreen: any = document.getElementById('room-screen');
-const gameOverScreen: any = document.getElementById('gameover-screen');
+const guessScreen: any = document.getElementById('guess-screen');
+const characterScreen: any = document.getElementById('character-list');
+const weaponScreen: any = document.getElementById('weapon-list');
+const noticeScreen: any = document.getElementById('notice-screen');
+const winScreen: any = document.getElementById('win-screen');
+const wrongScreen: any = document.getElementById('wrong-screen');
 
 // Button Variables
 const newGame: any = document.getElementById('start-button');
+const playAgain: any = document.getElementById('play-again');
+const returnButton: any = document.getElementById('return-button');
 const roomSelect: any = document
   .getElementById('room-travel')
   .getElementById('button');
@@ -62,9 +69,9 @@ const makeGuess: any = document
 const prevGuess: any = document
   .getElementById('prev-guess')
   .getElementById('button');
-
-// Game Variables
-let roomTarget: any = '';
+const dataLog: any = document
+  .getElementById('log-stuff')
+  .getElementById('button');
 
 export {
   Murderer,
@@ -74,10 +81,17 @@ export {
   titleScreen,
   mainScreen,
   roomScreen,
-  gameOverScreen,
+  guessScreen,
+  characterScreen,
+  weaponScreen,
+  noticeScreen,
+  winScreen,
+  wrongScreen,
   newGame,
+  playAgain,
+  returnButton,
   roomSelect,
   makeGuess,
   prevGuess,
-  roomTarget,
+  dataLog,
 };

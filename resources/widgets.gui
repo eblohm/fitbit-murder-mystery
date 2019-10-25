@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="styles/title.css" />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/roomselect.css" />
-    <link rel="stylesheet" href="styles/gameover.css" />
+    <link rel="stylesheet" href="styles/notices.css" />
     <link rel="import" href="/mnt/sysassets/widgets_common.gui" />
     <!-- Additional Imports -->
     <link rel="import" href="/mnt/sysassets/widgets/square_button_widget.gui" />
